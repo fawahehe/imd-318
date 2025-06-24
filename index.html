@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Biodata Website</title>
+<style>
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #0dd7ff;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid;
+      width: 0;
+      animation: typing 2s steps(12, end) forwards, blink 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0,0,0,0,0,0,0,0,0; }
+      to { width: 10ch; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">My Biodata</a>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="Aboutme.html" >Aboutme</a>
+            <a href="skills.html" >Skills</a>
+            <a href="Education.html" >Education</a>
+            <a href="Experience.html" >Experience</a>
+            <a href="Contact.html" >Contact</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Playlist.html">Playlist</a>
+            <a href="Email.html">Email</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="C:\Users\User\Downloads\meeeee.jpg" alt="" style="right: 100px;">
+        </div>
+
+        <div class="home-content">
+            <h1>Hi, It's <span>Nur Farah Batrisyia</span></h1>
+            <br>
+            <h3 class="typing-text"> ★ <span></span></h3>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/farah-batrisyia-1060222a9/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/fawahehe/myProjects"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.tiktok.com/@whohaelyn?lang=en"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/nrfrrh__/"><i class="fa-brands fa-instagram"></i></a>
+            <div id="clock">00:00:00</div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const h = String(now.getHours()).padStart(2, '0');
+      const m = String(now.getMinutes()).padStart(2, '0');
+      const s = String(now.getSeconds()).padStart(2, '0');
+      document.getElementById('clock').textContent = `${h}:${m}:${s}`;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+    </section>
+    
+    <footer>
+    <p>&copy; 2025 NUR FARAH BATRISYIA. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

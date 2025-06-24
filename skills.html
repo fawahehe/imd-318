@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Skills</title>
+<style>
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #0dd7ff;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid;
+      width: 0;
+      animation: typing 2s steps(12, end) forwards, blink 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0,0,0,0,0,0,0,0; }
+      to { width: 8ch; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+     .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .grid-list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      list-style: none;
+      padding: 0;
+      margin: 40px 0 0;
+      flex-wrap: wrap;
+    }
+
+    .category-card {
+      width: 270px;
+      min-height: 250px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      background-color: #e1f3f9;
+      border: 2px solid #8900fa;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .category-card .card-icon {
+      background-color: #0dd7ff;
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      margin-inline: auto;
+      margin-bottom: 20px;
+    }
+
+    .category-card .card-icon i {
+      color: white;
+      font-size: 24px;
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 10px;
+      display: block;
+      text-decoration: none;
+    }
+
+    .card-text {
+      font-size: 16px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .grid-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">My Skills</a>
+
+        <nav>
+            <a href="index.html" >Home</a>
+            <a href="Aboutme.html" > Aboutme</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="Education.html" >Education</a>
+            <a href="Experience.html" >Experience</a>
+            <a href="Contact.html" >Contact</a>>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Playlist.html">Playlist</a>
+            <a href="Email.html">Email</a>
+        </nav>
+    </header>
+      <section class="home">
+
+    <section class="section category" aria-label="skills">
+      <div class="container">
+        <h4 style="text-align:center; font-size: 36px;">🎓 My Skills</h4>
+
+        <ul class="grid-list">
+
+
+  <ul style="
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 20px;
+    line-height: 2;
+    color: #333;">
+    <li class="fade-in">a.💻 HTML, CSS, JavaScript. PHP</li>
+    <li class="fade-in">b.🖥️ Adobe Premiere Pro & Adobe Acrobat</li>
+    <li class="fade-in">c.📊 Microsoft Office (Word, Excel, PowerPoint)</li>
+    <li class="fade-in">d.🎨 Canva</li>
+    <li class="fade-in">e.🗂️ Capcut,Imovie</li>
+  </ul>
+</section>
+
+
+</body>
+</html>
